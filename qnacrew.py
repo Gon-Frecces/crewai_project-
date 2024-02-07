@@ -1,15 +1,13 @@
-import os
 import requests
 from bs4 import BeautifulSoup
 from crewai import Agent, Task, Crew
 from langchain.tools import tool
 from decouple import config
 from duckduckgo_search import DDGS
-from langchain_openai import ChatOpenAI
-import ollama
-from langchain import ollama
+# import ollama
+from langchain_community.llms import ollama
 
-llm = ollama(model = "openhermes")
+llm = ollama(model="openhermes")
 
 
 
